@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="#">
-          ToDos list
+          {props.title}
         </a>
         <button
           className="navbar-toggler"
@@ -32,7 +32,7 @@ export default function Header() {
               </a>
             </li>
           </ul>
-          <form className="form-inline my-2 my-lg-0">
+           {props.searchBar? <form className="form-inline my-2 my-lg-0">
             <input
               className="form-control mr-sm-2"
               type="search"
@@ -45,7 +45,7 @@ export default function Header() {
             >
               Search
             </button>
-          </form>
+          </form>: " "}
         </div>
       </nav>
     </div>
