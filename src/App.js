@@ -9,7 +9,7 @@ function App() {
   let name = 254;
   return (
     <>
-      <Header title="myList" searchBar={true} />
+      <Header title="myList"  />
       <TodoItem/>
       <Todos/>
       <Footer/>
