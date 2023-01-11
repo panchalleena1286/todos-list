@@ -2,8 +2,9 @@ import React from 'react'
 
 export const Todos = () => {
     return (
-        <div>
-            Todos works!
+        <div className="container">
+             <h3>Todos List</h3>
+             
         </div>
     )
 }
