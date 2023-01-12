@@ -2,8 +2,8 @@ import React from 'react'
 
 export const TodoItem = () => {
     return (
-        <div>
-            Todo works!
+        <div className='container'>
+            <h3>TodoItem here!</h3>
         </div>
     )
 }
